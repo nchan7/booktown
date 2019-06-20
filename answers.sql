@@ -1,6 +1,6 @@
 -- Order
 -- Find all subjects sorted by subject
-SELECT * FREOM subjects ORDER BY subject ASC;
+SELECT * FROM subjects ORDER BY subject ASC;
 -- Find all subjects sorted by location
 SELECT * FROM subjects ORDER BY location ASC;
 
@@ -10,7 +10,7 @@ SELECT * FROM books WHERE title = 'Little Women';
 -- Find all books containing the word "Python"
 SELECT * FROM books WHERE title LIKE  '%Python%';
 -- Find all subjects with the location "Main St" sort them by subject
-SELECT * FROM subjects WHERE location = 'Main St';
+SELECT * FROM subjects WHERE location = 'Main St' ORDER BY subject;
 
 -- Joins
 -- Find all books about Computers and list ONLY the book titles
